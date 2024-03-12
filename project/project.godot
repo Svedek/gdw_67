@@ -11,5 +11,18 @@ config_version=5
 [application]
 
 config/name="GDWJ-67"
+run/main_scene="res://World/map_base.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=192
+window/size/viewport_height=192
+window/size/window_width_override=768
+window/size/window_height_override=768
+window/stretch/mode="canvas_items"
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0
