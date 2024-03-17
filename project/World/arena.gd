@@ -17,6 +17,7 @@ func _ready():
 
 func _process(delta):
 	var tile = local_to_map(get_global_mouse_position())
+	print(tile)
 	
 	if terrain_dict.has(str(tile)):
-		set_cell(2, tile, 1, Vector2i(4,1))
+		set_cell(2, tile, 0, Vector2i(4,1))

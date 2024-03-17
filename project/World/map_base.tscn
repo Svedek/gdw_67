@@ -1,8 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://bass0cug7g2g2"]
+[gd_scene load_steps=8 format=3 uid="uid://bass0cug7g2g2"]
 
 [ext_resource type="Texture2D" uid="uid://5q7jdunv76d0" path="res://assets/world/testMap.png" id="1_omjjf"]
 [ext_resource type="Texture2D" uid="uid://doq88kkpvdva6" path="res://assets/icons/eye_icon.png" id="2_hl7oh"]
 [ext_resource type="Script" path="res://World/arena.gd" id="2_j3lbv"]
+[ext_resource type="Texture2D" uid="uid://be8u0wvau0xuh" path="res://assets/icons/limb_icon.png" id="4_hewrj"]
+[ext_resource type="Texture2D" uid="uid://bxi322fmfbret" path="res://assets/icons/heart_icon.png" id="5_axfh7"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h1x4q"]
 texture = ExtResource("1_omjjf")
@@ -46,3 +48,17 @@ position = Vector2(16, 96)
 [node name="Sprite2D" type="Sprite2D" parent="Eye"]
 position = Vector2(8, 8)
 texture = ExtResource("2_hl7oh")
+
+[node name="Limb" type="Node2D" parent="."]
+position = Vector2(96, 64)
+
+[node name="Sprite2D" type="Sprite2D" parent="Limb"]
+position = Vector2(8, 8)
+texture = ExtResource("4_hewrj")
+
+[node name="Heart" type="Node2D" parent="."]
+position = Vector2(64, 16)
+
+[node name="Sprite2D" type="Sprite2D" parent="Heart"]
+position = Vector2(8, 8)
+texture = ExtResource("5_axfh7")
